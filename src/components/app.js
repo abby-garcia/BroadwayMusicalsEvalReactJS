@@ -1,9 +1,8 @@
+//app componenets
 import React, { Component } from 'react';
 
 
 import Header from './header';
-import Instructions from './instructions.jsx';
-import MusicalPictures from './musicalpictures.jsx';
 
 
 export default class App extends Component {
@@ -11,9 +10,8 @@ export default class App extends Component {
     return (
       <div>
           <Header/>
-          <Instructions/>
-          <MusicalPictures/>
-
+          {this.props.children}
+          <h1> Footer</h1>
 
       </div>
     );

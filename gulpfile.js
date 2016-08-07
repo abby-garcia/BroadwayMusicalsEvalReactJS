@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 
-gulp.task('sass', function () {
+gulp.task('sass', function () { // call gulp sass in terminal
     return gulp.src('./styles/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('all.css'))
