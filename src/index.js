@@ -8,6 +8,7 @@ import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
 
 import App from './components/app';
 import Instructions from './components/instructions';
+import NavBar from './components/navBar'
 import MusicalPictures from './components/musicalpictures';
 
 
