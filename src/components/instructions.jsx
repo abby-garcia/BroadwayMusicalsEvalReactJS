@@ -2,7 +2,7 @@
 
   class Instructions extends React.Component {
       render() {
-          return <h3> Reviews written by theatre lovers, just like you! </h3>
+          return <h3 className="instructions"> Reviews written by theatre lovers, just like you! </h3>
 
 
       }

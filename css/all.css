@@ -3,3 +3,14 @@ body {
   background-color: #ff82b6;
   color: red;
   text-align: center; }
+
+.header {
+  color: white;
+  font-family: 'Bowlby One SC', cursive;
+  margin-top: 20px;
+  font-size: 40px; }
+
+.instructions {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px; }
