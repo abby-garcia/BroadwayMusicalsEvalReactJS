@@ -2,13 +2,13 @@ import React from 'react';
 
 class NavBar extends React.Component {
     render() {
-        return
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
+        return(
+        <nav className="navbar navbar-default navbar-fixed-top">
+          <div className="container">
             ...
           </div>
         </nav>
-
+      )
     }
 }
 
