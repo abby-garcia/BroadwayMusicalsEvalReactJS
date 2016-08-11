@@ -9,7 +9,7 @@ import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
 import App from './components/app';
 import Instructions from './components/instructions';
 import NavBar from './components/navBar'
-import MusicalPictures from './components/musicalpictures';
+import MusicalsContainer from './components/musicalscontainer';
 import ContactUs from './components/contactUs';
 
 
@@ -25,7 +25,7 @@ ReactDOM.render(
     <Router history={hashHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Instructions} />
-        <Route path="musicals" component={MusicalPictures} /> //name path whatever you want
+        <Route path="musicals" component={MusicalsContainer} /> //name path whatever you want
         <Route path="contact" component={ContactUs} /> // component = needs to be the same as the var
 
       </Route>
