@@ -19,24 +19,40 @@ class MusicalsContainer extends React.Component {
         picture:'https://upload.wikimedia.org/wikipedia/en/f/f8/Phantom.jpg'
       }
 
-    ]
+    ],
+
+    musicalSelected:null
+
     }
+
+    musicalSelection(name){
+
+      this.setState({
+        musicalSelected:name
+      })
+    }
+
 
     render() {
         return(
             <div>
+            {this.state == null ?
               <h3>Musical</h3>
               <div>
               {
                 this.state.musicals.map((musical,index)=>{ //this is a for loop, it gave us an object with elements of musicals , it also gives us the postion of that object
                     return(
-                      <Musical key={index} info={musical}/> //instead of doing all the HTML, we are calling the compoenent that has all the HTML in it's render
+                      <Musical key={index} info={musical} onMusicalClick={this.musicalSelection.bind(this)}/> //instead of doing all the HTML, we are calling the compoenent that has all the HTML in it's render
                     )
                 })
 
 
               }
               </div>
+              :
+              <h1>{this.state.musicalSelected}</h1>
+            }
+
 
 
 

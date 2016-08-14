@@ -1,16 +1,22 @@
 
 body {
   background-color: #ff82b6;
-  color: red;
-  text-align: center; }
+  color: red; }
+
+.nav-pills li {
+  list-style-type: none; }
 
 .header {
   color: white;
   font-family: 'Bowlby One SC', cursive;
   margin-top: 20px;
-  font-size: 40px; }
+  font-size: 40px;
+  text-align: center; }
 
 .instructions {
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 15px; }
+
+.pictures {
+  width: 100px; }
