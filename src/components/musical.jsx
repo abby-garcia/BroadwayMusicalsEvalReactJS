@@ -6,7 +6,7 @@ class Musical extends React.Component {
     render() {
 
       return(
-        <div className="musical" onClick={this.props.onMusicalClick.bind(null, this.props.info.name)}>
+        <div className="musical col-lg-3" onClick={this.props.onMusicalClick.bind(null, this.props.info.name)}>
         <p> {this.props.info.name} </p>
         <img className="pictures" src={this.props.info.picture}/>
         </div>
