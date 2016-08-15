@@ -3,20 +3,31 @@ body {
   background-color: #ff82b6;
   color: red; }
 
-.nav-pills li {
-  list-style-type: none; }
+#cssmenu {
+  opacity: .5;
+  float: right;
+  margin: -106px 40px 0 0; }
+  #cssmenu li {
+    display: inline-block; }
+  #cssmenu a {
+    margin-left: 26px; }
 
 .header {
   color: white;
   font-family: 'Bowlby One SC', cursive;
-  margin-top: 20px;
+  margin-top: 70px;
   font-size: 40px;
   text-align: center; }
+
+.fa-thumbs-up {
+  color: black;
+  margin-left: 47%; }
 
 .instructions {
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: 15px; }
+  font-size: 20px;
+  text-align: center; }
 
 .musical {
   padding: 10px 0; }

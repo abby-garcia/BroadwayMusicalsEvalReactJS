@@ -2,9 +2,12 @@
 
   class Instructions extends React.Component {
       render() {
-          return <h3 className="instructions"> Reviews written by theatre lovers, just like you! </h3>
-
-
+          return (
+            <div>
+              <i className="fa fa-thumbs-up fa-5x" aria-hidden="true"></i>
+              <h3 className="instructions"> Reviews written by theatre lovers, just like you! </h3>
+            </div>
+          )
       }
   }
 

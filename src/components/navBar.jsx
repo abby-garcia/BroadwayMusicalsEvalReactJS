@@ -3,15 +3,14 @@ import React from 'react';
 class NavBar extends React.Component {
     render() {
         return(
-        <nav className="navbar navbar-default navbar-fixed-top">
-          <div className="container">
-          <ul className="nav nav-pills">
-            <li role="presentation" className="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-            <li role="presentation"><a href="#">Messages</a></li>
-          </ul>
-          </div>
-        </nav>
+          <div id="cssmenu">
+              <ul>
+                <li className="active"><a href="#"><span>Home</span></a></li>
+                <li><a href="#"><span>About</span></a></li>
+                <li><a href="#"><span>FAQ</span></a></li>
+                <li classNAme="last"><a href="#"><span>Contact</span></a></li>
+              </ul>
+            </div>
       )
     }
 }

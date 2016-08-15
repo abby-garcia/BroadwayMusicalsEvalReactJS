@@ -1,34 +1,53 @@
 @import 'colors.scss';
 
+//body
 body {
   background-color: $pink;
   color: red;
 
 }
-
-.nav-pills {
+//nav bar
+#cssmenu {
+    opacity: .5;
+    float: right;
+    margin: -106px 40px 0 0;
   li{
-    list-style-type: none;
+    display: inline-block;
+  }
+  a{
+    margin-left: 26px;
   }
 
 
 }
+//end of nav bar
 
+//header start
 .header{
   color: white;
   font-family: 'Bowlby One SC', cursive;
-  margin-top: 20px;
+  margin-top: 70px;
   font-size: 40px;
   text-align: center;
 }
 
-.instructions{
-  color:white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
+//header end
+
+//instructions start
+.fa-thumbs-up{
+  color: black;
+  margin-left: 47%;
 }
 
 
+.instructions{
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+//instructions end
 
 .musical{
   // background-color: yellow;
