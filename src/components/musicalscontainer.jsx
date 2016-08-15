@@ -1,6 +1,7 @@
 import React from 'react';
 import Musical from './musical';
-
+import {connect} from 'react-redux'; // use {} to filter the module you need
+import {fetchMusicals} from '../actions/index'; // you must export the function to then import here
 
 
 class MusicalsContainer extends React.Component {
@@ -38,6 +39,11 @@ class MusicalsContainer extends React.Component {
 
     }
 
+    componentWillMount(){
+      console.log("Hello")
+      this.props.fetchMusicals();
+    }
+
     musicalSelection(name){
 
       this.setState({
@@ -72,5 +78,11 @@ class MusicalsContainer extends React.Component {
 
     }
 }
+  // function mapStateToProps(state){ // map state to this.props
+  //   return{
+  //       musicals:state.musicals;
+  //   }
+  // }
 
-export default MusicalsContainer;
+export default connect(null,{fetchMusicals})(MusicalsContainer); // reducers is first, actions is second
+//now we can use the action with "this.props.fetchMusicals", we will have the action now
