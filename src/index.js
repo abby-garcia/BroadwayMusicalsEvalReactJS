@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'; // only imports what's in {} from react-redux
 import { createStore, applyMiddleware } from 'redux';
 import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
-
+import Promise from 'redux-promise';
 
 import App from './components/app';
 import Instructions from './components/instructions';
@@ -21,7 +21,7 @@ import MusicalInfoBox from './components/musicalInfoBox';
 import reducers from './reducers';
 
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const createStoreWithMiddleware = applyMiddleware(Promise)(createStore); // being executed with reducers, look at line 27
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
