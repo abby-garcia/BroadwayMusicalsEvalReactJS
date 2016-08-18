@@ -29,3 +29,16 @@ export function fetchOneMusical(){
 
 
 }
+
+export function practice(){
+    // do the call
+      const request = axios.get("https://api.seatgeek.com/2/events?performers.id=3");
+
+    // return the action
+      return{ // this is how you create an action!
+        type:"PRACTICE", // we're just using the name to tell us what to do/ tells us what action it is
+        payload: request
+      }
+
+
+}

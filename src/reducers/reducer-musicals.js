@@ -12,6 +12,9 @@ export default function(state = [], action){
   else if(action.type =="FETCH_ONE_MUSICAL"){
       return action.payload.data;
   }
+  else if(action.type =="PRACTICE"){
+    return action.payload.data;
+  }
   else{
     return state; //returns empty state, has no data
   }

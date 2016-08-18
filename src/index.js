@@ -13,6 +13,7 @@ import MusicalsContainer from './components/musicalscontainer';
 import ContactUs from './components/contactUs';
 import MusicalInfoBox from './components/musicalInfoBox';
 import IndividualMusical from './components/individualMusical';
+import Practice from './components/practice';
 
 
 
@@ -34,6 +35,8 @@ ReactDOM.render(
         <Route path="contact" component={ContactUs} /> // component = needs to be the same as the var
         <Route path="musicalInfoBox" component={MusicalInfoBox} />
         <Route path="musical" component={IndividualMusical} />
+        <Route path="practice" component={Practice} />
+
 
 
       </Route>
