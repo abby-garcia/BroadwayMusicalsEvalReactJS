@@ -9,7 +9,11 @@ export default function(state = [], action){
   if(action.type == "FETCH_MUSICALS" ){
       return action.payload.data.events;  //this gets sent to state. REducers always send back to the state!!!!! What reducers return is called the state
   }
+  else if(action.type =="FETCH_ONE_MUSICAL"){
+      return action.payload.data;
+  }
   else{
     return state; //returns empty state, has no data
   }
+
 }

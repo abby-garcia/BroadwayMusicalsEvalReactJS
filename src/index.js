@@ -12,6 +12,8 @@ import NavBar from './components/navBar'
 import MusicalsContainer from './components/musicalscontainer';
 import ContactUs from './components/contactUs';
 import MusicalInfoBox from './components/musicalInfoBox';
+import IndividualMusical from './components/individualMusical';
+
 
 
 
@@ -31,6 +33,9 @@ ReactDOM.render(
         <Route path="musicals" component={MusicalsContainer} /> //name path whatever you want
         <Route path="contact" component={ContactUs} /> // component = needs to be the same as the var
         <Route path="musicalInfoBox" component={MusicalInfoBox} />
+        <Route path="musical" component={IndividualMusical} />
+
+
       </Route>
     </Router>
   </Provider>
